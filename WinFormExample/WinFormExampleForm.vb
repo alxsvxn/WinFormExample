@@ -1,5 +1,9 @@
-﻿Public Class WinFormExampleForm
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿'Alexis Villagran
 
-    End Sub
+Option Strict On
+Option Explicit On
+Option Compare Binary
+
+Public Class WinFormExampleForm
+
 End Class
