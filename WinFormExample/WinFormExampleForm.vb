@@ -15,11 +15,13 @@ Public Class WinFormExampleForm
 
     Sub SetCase()
         If UpperRadioButton.Checked = True Then
-            Me.Text = UCase(FirstTextBox.Text & " " & LastTextBox.Text)
+            FirstTextBox.Text = UCase(FirstTextBox.Text)
+            LastTextBox.Text = UCase(LastTextBox.Text)
 
 
         ElseIf LowerRadioButton.Checked = True Then
-            Me.Text = LCase(FirstTextBox.Text & " " & LastTextBox.Text)
+            FirstTextBox.Text = LCase(FirstTextBox.Text)
+            LastTextBox.Text = LCase(LastTextBox.Text)
 
         Else
             MsgBox($"YOU DIDN'T SELECT A CASE!")
@@ -29,7 +31,7 @@ Public Class WinFormExampleForm
 
     Sub SetFormat()
         If FirstLastRadioButton.Checked = True Then
-            Me.Text = FirstTextBox.Text & " " & LastTextBox.Text
+            Me.Text = FirstTextBox.Text & " ," & LastTextBox.Text
 
         ElseIf LastFirstRadioButton.Checked = True Then
             Me.Text = $"{LastTextBox.Text}, {FirstTextBox.Text}"
