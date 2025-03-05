@@ -36,6 +36,9 @@ Partial Class WinFormExampleForm
         Me.FirstLastRadioButton = New System.Windows.Forms.RadioButton()
         Me.CaseGroupBox = New System.Windows.Forms.GroupBox()
         Me.NameFormatGroupBox = New System.Windows.Forms.GroupBox()
+        Me.ReverseCheckBox = New System.Windows.Forms.CheckBox()
+        Me.WhiteSpaceCheckBox = New System.Windows.Forms.CheckBox()
+        Me.RandomCheckBox = New System.Windows.Forms.CheckBox()
         Me.NameFormatGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,7 +53,7 @@ Partial Class WinFormExampleForm
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(13, 224)
+        Me.UpdateButton.Location = New System.Drawing.Point(274, 224)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.Size = New System.Drawing.Size(115, 98)
         Me.UpdateButton.TabIndex = 3
@@ -169,11 +172,44 @@ Partial Class WinFormExampleForm
         Me.NameFormatGroupBox.TabStop = False
         Me.NameFormatGroupBox.Text = "Name Format"
         '
+        'ReverseCheckBox
+        '
+        Me.ReverseCheckBox.AutoSize = True
+        Me.ReverseCheckBox.Location = New System.Drawing.Point(70, 181)
+        Me.ReverseCheckBox.Name = "ReverseCheckBox"
+        Me.ReverseCheckBox.Size = New System.Drawing.Size(66, 17)
+        Me.ReverseCheckBox.TabIndex = 12
+        Me.ReverseCheckBox.Text = "Reverse"
+        Me.ReverseCheckBox.UseVisualStyleBackColor = True
+        '
+        'WhiteSpaceCheckBox
+        '
+        Me.WhiteSpaceCheckBox.AutoSize = True
+        Me.WhiteSpaceCheckBox.Location = New System.Drawing.Point(70, 204)
+        Me.WhiteSpaceCheckBox.Name = "WhiteSpaceCheckBox"
+        Me.WhiteSpaceCheckBox.Size = New System.Drawing.Size(88, 17)
+        Me.WhiteSpaceCheckBox.TabIndex = 13
+        Me.WhiteSpaceCheckBox.Text = "White Space"
+        Me.WhiteSpaceCheckBox.UseVisualStyleBackColor = True
+        '
+        'RandomCheckBox
+        '
+        Me.RandomCheckBox.AutoSize = True
+        Me.RandomCheckBox.Location = New System.Drawing.Point(70, 227)
+        Me.RandomCheckBox.Name = "RandomCheckBox"
+        Me.RandomCheckBox.Size = New System.Drawing.Size(66, 17)
+        Me.RandomCheckBox.TabIndex = 14
+        Me.RandomCheckBox.Text = "Random"
+        Me.RandomCheckBox.UseVisualStyleBackColor = True
+        '
         'WinFormExampleForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(522, 334)
+        Me.Controls.Add(Me.RandomCheckBox)
+        Me.Controls.Add(Me.WhiteSpaceCheckBox)
+        Me.Controls.Add(Me.ReverseCheckBox)
         Me.Controls.Add(Me.LowerRadioButton)
         Me.Controls.Add(Me.UpperRadioButton)
         Me.Controls.Add(Me.AgeTextBox)
@@ -209,4 +245,7 @@ Partial Class WinFormExampleForm
     Friend WithEvents FirstLastRadioButton As RadioButton
     Friend WithEvents CaseGroupBox As GroupBox
     Friend WithEvents NameFormatGroupBox As GroupBox
+    Friend WithEvents ReverseCheckBox As CheckBox
+    Friend WithEvents WhiteSpaceCheckBox As CheckBox
+    Friend WithEvents RandomCheckBox As CheckBox
 End Class
